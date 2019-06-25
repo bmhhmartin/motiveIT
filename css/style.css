@@ -1,0 +1,594 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+ol,ul{
+    list-style: none;
+}
+a,a:hover{
+    text-decoration: none;
+}
+img{
+    border: 0px;
+}
+h1,h2,h3,h4,h5,h6,ol,ul,p,address{
+    margin-top: 0px;
+    margin-bottom: 0px;
+}
+@font-face{
+    font-family:karla_regular;
+    src:url(../fonts/karla/Karla-Regular.ttf);
+} 
+@font-face{
+    font-family:raleway_regular;
+    src:url(../fonts/raleway/Raleway-Regular.ttf);
+}
+@font-face{
+    font-family:raleway_extra_bold;
+    src:url(../fonts/raleway/Raleway-ExtraBold.ttf);
+}
+@font-face{
+    font-family:opensans_regular;
+    src:url(../fonts/open_sans/OpenSans-Regular.ttf);
+}
+@font-face{
+    font-family:lora_italic;
+    src:url(../fonts/lora/Lora-Italic.ttf);
+}
+@font-face{
+    font-family:candara_bold;
+    src:url(../fonts/candara/Candara_Bold.ttf);
+}
+@font-face{
+    font-family:robotoslab_regular;
+    src:url(../fonts/robotoslab/RobotoSlab_Regular.ttf);
+}
+.bg{
+    background: #753d9d;
+}
+/*-------------main css start now-----------------*/
+.media{
+    position: fixed;
+    top: 40%;
+    left: 0;
+    z-index: 1;
+}
+.media i:hover{
+    width: 100px;
+    transition: all linear .4s;
+}
+.media .fa-facebook{
+    background: #3b5998;
+    color: #fff;
+    height: 50px;
+    width: 50px;
+    line-height: 50px;
+    text-align: center;
+    font-size: 25px;
+}
+.media .fa-google-plus{
+    background: #ca3725;
+    color: #fff;
+    height: 50px;
+    width: 50px;
+    line-height: 50px;
+    text-align: center;
+    font-size: 25px;
+}
+.media .fa-twitter{
+    background: #55acee;
+    color: #fff;
+    height: 50px;
+    width: 50px;
+    line-height: 50px;
+    text-align: center;
+    font-size: 25px;
+}
+.media{}
+/*-------------media part ends-----------------*/
+header{
+    background: url(../images/banner.jpg);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    background-attachment: fixed;
+}
+.navbar{
+    padding-top: 30px;
+}
+.nav > li > a:focus, .nav > li > a{
+    color: #fff;
+    text-transform: uppercase;
+    font-family: karla_regular;
+    font-weight: 600;
+    font-size: 16px;
+}
+.nav > li > a:focus, .nav > li > a:hover{
+    background: none;
+    color: #1ecdff;
+}
+header .title h1{
+    font-size: 40px;
+    font-family: raleway_extra_bold;
+    color: #fff;
+    font-weight: 600;
+    padding: 15% 0% 15%;
+}
+header .title h1 span{
+    color: #1ecdff;
+}
+header .title p{
+    font-family: lora_italic;
+    color: #fff;
+    font-size: 15px;
+    padding-bottom: 20%;
+    text-transform: initial;
+}
+header .title a{
+    background: #1ecdff;
+    padding: 15px 60px;
+    color: #1d1d1d;
+    border-radius: 10px;
+    text-transform: uppercase;
+    font-weight: 600;
+}
+header .title a:hover{
+    background: #fff;
+    color: #383838;
+}
+header .title h6{
+    padding: 100px 0px;
+    color: #fff;
+    font-family: robotoslab_regular;
+}
+/*--header part ends--*/
+#objective h1{
+    font-size: 40px;
+    font-family: candara_bold;
+    color: #525252;
+    padding: 50px 0px;
+}
+#objective h2{
+    font-size: 40px;
+    font-family: candara_bold;
+    color: #fff;
+    vertical-align: middle;
+}
+#objective h3{
+    font-size: 20px;
+    font-family: raleway_extra_bold;
+    padding-bottom: 20px;
+}
+#objective p{
+    font-family: opensans_regular;
+    text-align: justify;
+    padding-bottom: 70px;
+    color: #000;
+    font-size: 16px;
+}
+#objective h4{
+    font-size: 18px;
+    font-family: lora_italic;
+    color: #fff;
+}
+.hovereffect {
+  width: 100%;
+  height: 100%;
+  float: left;
+  overflow: hidden;
+  position: relative;
+  text-align: center;
+  cursor: default;
+}
+
+.hovereffect .overlay {
+  position: absolute;
+  overflow: hidden;
+  width: 80%;
+  height: 80%;
+  left: 10%;
+  top: 10%;
+  border-bottom: 1px solid #FFF;
+  border-top: 1px solid #FFF;
+  -webkit-transition: opacity 0.35s, -webkit-transform 0.35s;
+  transition: opacity 0.35s, transform 0.35s;
+  -webkit-transform: scale(0,1);
+  -ms-transform: scale(0,1);
+  transform: scale(0,1);
+}
+
+.hovereffect:hover .overlay {
+  opacity: 1;
+  filter: alpha(opacity=100);
+  -webkit-transform: scale(1);
+  -ms-transform: scale(1);
+  transform: scale(1);
+}
+
+.hovereffect img {
+  display: block;
+  position: relative;
+  -webkit-transition: all 0.35s;
+  transition: all 0.35s;
+}
+
+.hovereffect:hover img {
+  filter: url('data:image/svg+xml;charset=utf-8,<svg xmlns="http://www.w3.org/2000/svg"><filter id="filter"><feComponentTransfer color-interpolation-filters="sRGB"><feFuncR type="linear" slope="0.6" /><feFuncG type="linear" slope="0.6" /><feFuncB type="linear" slope="0.6" /></feComponentTransfer></filter></svg>#filter');
+  filter: brightness(0.6);
+  -webkit-filter: brightness(0.6);
+}
+
+.hovereffect h2 {
+  text-transform: uppercase;
+  text-align: center;
+  position: relative;
+  font-size: 17px;
+  background-color: transparent;
+  color: #FFF;
+  padding: 1em 0;
+  opacity: 0;
+  filter: alpha(opacity=0);
+  -webkit-transition: opacity 0.35s, -webkit-transform 0.35s;
+  transition: opacity 0.35s, transform 0.35s;
+  -webkit-transform: translate3d(0,-100%,0);
+  transform: translate3d(0,-100%,0);
+}
+
+.hovereffect a, .hovereffect p {
+  color: #FFF;
+  padding: 1em 0;
+  opacity: 0;
+  filter: alpha(opacity=0);
+  -webkit-transition: opacity 0.35s, -webkit-transform 0.35s;
+  transition: opacity 0.35s, transform 0.35s;
+  -webkit-transform: translate3d(0,100%,0);
+  transform: translate3d(0,100%,0);
+}
+
+.hovereffect:hover a, .hovereffect:hover p, .hovereffect:hover h2 {
+  opacity: 1;
+  filter: alpha(opacity=100);
+  -webkit-transform: translate3d(0,0,0);
+  transform: translate3d(0,0,0);
+}
+/*Objective part ends*/
+#about h1{
+    font-size: 40px;
+    font-family: candara_bold;
+    color: #525252;
+    padding: 50px 0px;
+}
+#about h2{
+    font-size: 40px;
+    font-family: candara_bold;
+    color: #fff;
+    vertical-align: middle;
+}
+#about h3{
+    font-size: 20px;
+    font-family: raleway_extra_bold;
+    padding: 20px 0px;
+}
+#about p{
+    font-family: opensans_regular;
+    text-align: justify;
+    padding-bottom: 70px;
+    color: #000;
+    font-size: 16px;
+}
+#about h4{
+    font-size: 18px;
+    font-family: lora_italic;
+    color: #fff;
+}
+/*--about part ends--*/
+#service h2{
+    font-size: 40px;
+    font-family: candara_bold;
+    color: #525252;
+    padding: 50px 0px;
+    text-align: center;
+}
+#service .step{
+    padding: 15px;
+    min-height: 400px;
+}
+#service .step:hover{
+    -webkit-box-shadow: 0px -2px 32px 0px rgba(184,184,184,1);
+    -moz-box-shadow: 0px -2px 32px 0px rgba(184,184,184,1);
+    box-shadow: 0px -2px 32px 0px rgba(184,184,184,1);
+    transition: all linear .3s;
+}
+#service .step i{
+    height: 100px;
+    width: 100px;
+    line-height: 100px;
+    border-radius: 50%;
+    font-size: 50px;
+    color: #1ecdff;
+    border: 1px solid #1ecdff;
+}
+#service .step:hover i{
+    color: #fff;
+    border-radius: 50%;
+    background: #1ecdff;
+}
+#service .step:hover h4{
+    color: #1ecdff;
+}
+#service .step h4{
+    font-size: 25px;
+    padding: 15px 0px;
+    font-family: candara_bold;
+}
+#service .step p{
+    font-size: 15px;
+    padding-bottom: 30px;
+    font-family: lora_italic;
+    text-align: justify;
+    text-align-last: center;
+}
+#service .step a{
+    padding: 10px 50px;
+    border: 1px solid #1ecdff;
+    color: #1ecdff;
+    font-family: candara_bold;
+    border-radius: 5px;
+    text-transform: uppercase;
+}
+#service .step a:hover{
+    background: #1ecdff;
+    color: #fff;
+}
+/*service part ends*/
+#testimonial h2{
+    text-align: center;
+    font-size: 40px;
+    font-family: candara_bold;
+    color: #fff;
+    padding: 50px 0px;
+}
+#testimonial{
+    background: url(../images/testimonial.jpg);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+}
+#testimonial img{
+    display: inline-block;
+    height: 250px;
+    width: 250px;
+    border-radius: 50%;
+}
+#testimonial h3{
+    font-size: 25px;
+    color: #1ecdff;
+    font-family: candara_bold;
+    padding: 20px 0px;
+}
+#testimonial p{
+    font-size: 15px;
+    color: #fff;
+    padding: 0px 0px 100px;
+    font-family: lora_italic;
+    text-align: justify;
+    text-align-last: center;
+}
+.slick-next.slick-arrow {
+    background: #1ecdff;
+    color: #fff;
+    font-weight: 500;
+    font-family: candara_bold;
+    border: none;
+    padding: 5px 15px;
+    position: absolute;
+    top: 19%;
+    right: 0;
+}
+.slick-prev.slick-arrow {
+    background: #1ecdff;
+    border: none;
+    padding: 5px 15px;
+    color: #fff;
+    font-weight: 500;
+    font-family: candara_bold;
+}
+/*--testimonial part ends--*/
+
+/*--project part ends--*/
+
+#contact h2{
+    text-align: center;
+    font-size: 40px;
+    font-family: candara_bold;
+    padding: 50px 0px;
+    color: #525252;; 
+}
+#contact h3{
+    text-align: center;
+    font-size: 25px;
+    font-family: candara_bold;
+    padding-bottom: 20px;
+    color: #525252;
+}
+#contact .map{
+    border: 1px solid #1ecdff;
+}
+#contact .map iframe{
+    width: 100%;
+}
+#contact label{
+    color: #000;
+}
+#contact form a{
+    border: 1px solid #1ecdff;
+    padding: 7px 40px;
+    color: #1ecdff;
+    font-family: candara_bold;
+}
+#contact form a:hover{
+    background: #1ecdff;
+    color: #fff;
+}
+#contact p{
+    padding: 50px 0px;
+    text-align: center;
+    font-family: lora_italic;
+    font-size: 16px;
+    color: #000;
+}
+textarea{
+    max-width: 100%;
+}
+.form-control{
+    border: 1px solid #1ecdff;
+}
+/*--contact part ends--*/
+footer{
+    background: #0a2a39;
+}
+footer h3{
+    padding: 30px 0px 20px;
+    color: #fff;
+}
+footer ul li i{
+    font-size: 15px;
+    color: #1ecdff;
+    padding-right: 10px;
+    text-align-last: right;
+}
+footer .fa-star, .fa-location-arrow, .fa-link, .fa-file-text,.fa-phone{
+    padding-right: 20px;
+    color: #1ecdff;
+}
+footer ul{
+	padding-bottom: 30px;
+}
+footer ul li{
+    padding: 3px 0px;
+}
+footer ul li a{
+    color: #fff;
+    font-size: 14px;
+    font-family: arial;
+    font-weight: 400;
+}
+footer ul li a:hover{
+    color: #1ecdff;
+    text-decoration: underline;
+}
+footer img .this{
+    display: inline-block;
+}
+footer p{
+    color: #fff;
+    text-align: justify;
+}
+footer .address i{
+    color: #1ecdff;
+    padding-right: 10px;
+}
+footer .address h4{
+    color: #fff;
+    font-size: 15px;
+    padding-bottom: 15px;
+    font-weight: 500;
+}
+footer h6{
+    color: #fff;
+    padding-bottom: 20px;
+    font-size: 15px;
+    font-family: lora_italic; 
+}
+footer .social .fa-facebook{
+    width: 40px;
+    height: 40px;
+    line-height: 40px;
+    font-size: 20px;
+    text-align: center;
+    color: #fff;
+	border: 1px solid #1ecdff;
+    border-radius: 5px;
+}
+footer .social .fa-google-plus{
+    width: 40px;
+    height: 40px;
+    line-height: 40px;
+    font-size: 20px;
+    text-align: center;
+    color: #fff;
+	border: 1px solid #1ecdff;
+    border-radius: 5px;
+}
+footer .social .fa-twitter{
+    width: 40px;
+    height: 40px;
+    line-height: 40px;
+    font-size: 20px;
+    text-align: center;
+    color: #fff;
+	border: 1px solid #1ecdff;
+    border-radius: 5px;
+}
+footer .social .fa-youtube{
+    width: 40px;
+    height: 40px;
+    line-height: 40px;
+    font-size: 20px;
+    text-align: center;
+    color: #fff;
+	border: 1px solid #1ecdff;
+    border-radius: 5px;
+}
+footer .social .fa-skype{
+    width: 40px;
+    height: 40px;
+    line-height: 40px;
+    font-size: 20px;
+    text-align: center;
+    color: #fff;
+	border: 1px solid #1ecdff;
+    border-radius: 5px;
+}
+footer .social .fa-facebook:hover{
+	background: #3b5999;
+	border: 1px solid #3b5999;
+}
+footer .social .fa-google-plus:hover{
+	background: #e04006;
+	border: 1px solid #e04006;
+}
+footer .social .fa-twitter:hover{
+	background: #1da1f3;
+	border: 1px solid #1da1f3;
+}
+footer .social .fa-youtube:hover{
+	background: #ff0000;
+	border: 1px solid #ff0000;
+}
+footer .social .fa-skype:hover{
+	background: #32c5f0;
+	border: 1px solid #32c5f0;
+}
+/*--footer part ends--*/
+#copy{
+    background: #011c29;
+}
+#copy p{
+    padding: 10px 0px;
+    text-align: center;
+    color: #fff;
+}
+/*--copy part ends--*/
+
+
+
+
+
+
+
+
+
+
+
+

@@ -1,0 +1,158 @@
+@media(min-width:768px) and (max-width:991px){
+    .media{
+        position: fixed;
+        top: 100;
+        left: 0;
+        z-index: 1;
+    }
+    .nav > li > a:focus, .nav > li:hover{
+        color: #1ecdff;
+    }
+    .nav > li > a:focus, .nav > li > a{
+        padding: 5px 10px;
+        font-size: 14px;
+    }
+    header{
+        background-attachment: fixed;
+    }
+    header .title h1{
+        font-size: 30px;
+        padding: 70px;
+    }
+    header .title p{
+        font-size: 14px;
+    }
+/*--header part ends--*/
+    #objective h1{
+        font-size: 40px;
+        padding: 50px 0px;
+    }
+    #objective p{
+        font-size: 12px;
+        padding-bottom: 10px;
+    }
+/*--objective part ends--*/
+    #about h1{
+        font-size: 40px;
+        padding: 50px 0px;
+    }
+    #about p{
+        font-size: 12px;
+        padding-bottom: 10px;
+    }
+/*--about part ends--*/
+    #testimonial p{
+        padding-bottom: 25px;
+    }
+/*--testimonial part ends--*/
+    footer h3{
+        font-size: 20px;
+    }
+    footer ul li i{
+        font-size: 15px;
+        padding-right: 15px;
+    }
+    footer .fa-star, .fa-location-arrow, .fa-link{
+        padding-right: 10px;
+    }
+    footer .address i{
+        padding-right: 5px;
+    }
+    footer .address h4{
+        font-size: 14px;
+        padding-bottom: 15px;
+    }
+    footer .social .fa-facebook{
+        width: 30px;
+        height: 30px;
+        line-height: 30px;
+        font-size: 15px;
+    }
+    footer .social .fa-google-plus{
+        width: 30px;
+        height: 30px;
+        line-height: 30px;
+        font-size: 15px;
+    }
+    footer .social .fa-twitter{
+       width: 30px;
+        height: 30px;
+        line-height: 30px;
+        font-size: 15px;
+    }
+    footer .social .fa-youtube{
+        width: 30px;
+        height: 30px;
+        line-height: 30px;
+        font-size: 15px;
+    }
+/*--footer part ends--*/
+       
+}
+
+
+
+
+
+
+@media(min-width:320px) and (max-width:767px){
+    .media{
+        position: fixed;
+        bottom: 0;
+        left: 0;
+        z-index: 1;
+    }
+    .navbar-toggle{
+        background: #1ecdff;
+        margin-right: 0px;
+    }
+    .icon-bar{
+        background: #00114b;
+    }
+    .nav > li > a:focus, .nav > li > a{
+        text-align: right;
+        padding: 5px 0px;
+        font-size: 15px;
+    }
+    header .title h1{
+        font-size: 37px;
+        padding: 40px 0px;
+    }
+/*--header part ends--*/
+    #objective h1{
+        font-size: 40px;
+        padding: 50px 0px;
+    }
+    #objective p{
+        font-size: 13px;
+        padding-bottom: 10px;
+    }
+/*--objective part ends--*/
+    #work h2{
+        font-size: 40px;
+        padding: 50px 0px;
+    }
+    #work h3{
+        padding: 10px 0px;
+    }
+    #work p{
+        font-size: 13px;
+        padding-bottom: 10px;
+    }
+/*--work part ends--*/
+    .social{
+        text-align: center !important;
+    }
+    #service .step{
+        padding: 15px;
+        min-height: 200px;
+    }
+/*--service part ends--*/
+    #contact form a{
+        border: 1px solid #1ecdff;
+        width: 100%;
+        min-height: 30px;
+    }
+/*--contact part ends--*/
+     
+}
